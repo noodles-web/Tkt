@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas</title>
+<style>
+:root{--bg:#f5f5f7;--card:#fff;--tx:#1d1d1f;--sub:#86868b;--ln:rgba(0,0,0,.08);--up:#1d9a4b;--dn:#e5322d;--bar:rgba(245,245,247,.8);--fill:rgba(120,120,128,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--card:#1c1c1e;--tx:#f5f5f7;--sub:#8e8e93;--ln:rgba(255,255,255,.1);--up:#30d158;--dn:#ff453a;--bar:rgba(0,0,0,.75);--fill:rgba(120,120,128,.26)}}
+:root[data-theme="dark"]{--bg:#000;--card:#1c1c1e;--tx:#f5f5f7;--sub:#8e8e93;--ln:rgba(255,255,255,.1);--up:#30d158;--dn:#ff453a;--bar:rgba(0,0,0,.75);--fill:rgba(120,120,128,.26)}
+:root[data-skin="or"]{--bg:#0a0908;--card:#15130f;--tx:#f3ead2;--sub:#9b9078;--ln:rgba(217,180,74,.18);--up:#d9b44a;--dn:#d8654f;--bar:rgba(10,9,8,.8);--fill:rgba(217,180,74,.12);--acc:#d9b44a;--on:#1a1405}
+:root[data-skin="minuit"]{--bg:#060b1a;--card:#0f1830;--tx:#e8eeff;--sub:#7d8bb0;--ln:rgba(120,150,255,.16);--up:#4ade9a;--dn:#ff6b7a;--bar:rgba(6,11,26,.8);--fill:rgba(120,150,255,.14);--acc:#6c8bff;--on:#fff}
+:root[data-skin="verre"]{--bg:#0b1020;--card:rgba(255,255,255,.09);--tx:#fff;--sub:rgba(255,255,255,.62);--ln:rgba(255,255,255,.14);--up:#5ef2b0;--dn:#ff7a8a;--bar:rgba(20,25,50,.55);--fill:rgba(255,255,255,.13);--acc:#fff;--on:#0b1020}
+[data-skin="verre"] body{background-image:radial-gradient(60% 40% at 10% 0,#5b3df5aa,transparent 70%),radial-gradient(50% 40% at 100% 25%,#e0449daa,transparent 70%),radial-gradient(60% 50% at 50% 100%,#1fb5d6aa,transparent 70%);background-attachment:fixed}
+[data-skin="verre"] .card,[data-skin="verre"] .st div{-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px)}
+[data-skin="verre"] #sh,[data-skin="verre"] #sh2{background:#151b36}
+[data-skin="or"] h1,[data-skin="or"] .big,[data-skin="or"] .nm2{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:600;letter-spacing:-.01em}
+.sk{display:flex;flex-wrap:wrap;gap:8px;margin:0 4px}
+.sk button{border:0;background:var(--card);border-radius:999px;padding:9px 14px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px}
+.sk .on{outline:2px solid var(--acc,var(--tx))}
+.dot{width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(128,128,128,.4)}
